@@ -44,11 +44,13 @@ body,
 html {
     width: 100%;
 	height: 100%;
+
 }
 
 body, p {
 	color: #555; 
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;;
+	
 }
 
 .p-large {
@@ -789,6 +791,13 @@ input[type='checkbox'] {
 	padding-top: 8rem;
 	padding-bottom: 4rem;
 	text-align: center;
+}
+.header .verification-content {
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	text-align: center;
+	height: 500px;
+	background-color: #FFF;
 }
 
 .header .text-container {
@@ -1797,9 +1806,14 @@ a:hover.back-to-top {
 	.header .header-content {
 		text-align: left;
 	}
+	.header .verification-content {
+		text-align: left;
+		height: 500px;
+		background-color: #FFF;
+	}
 
 	.header .text-container {
-		margin-top: 4rem;
+		margin-top: 2rem;
 		margin-bottom: 0;
 	}
 
@@ -1994,9 +2008,15 @@ a:hover.back-to-top {
 		padding-top: 11rem;
 		padding-bottom: 5rem;
 	}
+	.header .verification-content {
+		padding-top: 2rem;
+		padding-bottom: 3rem;
+		height: 500px;
+		background-color: #FFF;
+	}
 
 	.header .text-container {
-		margin-top: 5.5rem;
+		margin-top: 2.5rem;
 		margin-right: 0.5rem;
 	}
 
