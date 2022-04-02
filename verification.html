@@ -40,16 +40,22 @@
 		for (var i=0; i<parms.length; i++) {
 			var pos = parms[i].indexOf('=');
 			if (pos > 0  && search_for == parms[i].substring(0,pos)) {
-				return parms[i].substring(pos+1);;
+                return decodeURIComponent((parms[i].substring(pos+1) + '').replace(/\+/g, '%20'));
+				
 			}
 		}
 		return "";
 	}
+    function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+    
         window.onload = function(){
            var refButton = document.getElementById("namefiled").textContent;      
            document.getElementById('fail').style.display = 'inline';
            document.getElementById('success').style.display = 'none';
-                document.getElementById("namefiled").textContent = qs('name');
+                
+                document.getElementById("namefiled").textContent = 'Welcome ' + capitalizeFirstLetter(qs('name'));
                 if(qs('status') === 'success') {
                 document.getElementById('fail').style.display = 'none';
                 document.getElementById('success').style.display = 'inline';
@@ -98,9 +104,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div><h1>Welcome !!! <div id="namefiled"></div></h1></div>
-                   <p>Thank you for verifing your email on CliqRight app! <a class="white" href="index.html">CliqRight.com</a></p> 
-                  
+                    <div class="fa fa-check-circle fa-10x fa-inverse"></div>
+                    <div ><h1 id="namefiled">Welcome !!!</h1></div>
+                   <p>Thank you for verifing your email on CliqRight app! </p> 
+                   <a class="btn-outline-reg" style="border:0.125rem solid #f3f7fd;color:#f3f7fd" href="index.html">CLIQRIGHT</a>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div>
