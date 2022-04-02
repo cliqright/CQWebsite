@@ -462,6 +462,7 @@ button.swiper-pagination-bullet {
   max-height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+  width: 950px;
 }
 .swiper-slide-zoomed {
   cursor: move;
