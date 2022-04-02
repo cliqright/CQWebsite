@@ -1595,7 +1595,7 @@ a:hover.back-to-top {
 	padding-top: 9rem;
 	background-color: #f56720;
 	text-align: center;
-	min-height: 100vh;
+	min-height: 75vh;
 }
 
 .ex-2-header h1,
@@ -1604,14 +1604,14 @@ a:hover.back-to-top {
 }
 
 .ex-2-header p {
-	max-width: 24rem;
+	max-width: 44rem;
 	margin-right: auto;
 	margin-bottom: 2.5rem;
 	margin-left: auto;
 }
 
 .ex-2-header .form-container {
-	max-width: 26rem;
+	max-width: 46rem;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 2.25rem 1.25rem 1.25rem 1.25rem;

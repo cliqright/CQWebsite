@@ -863,21 +863,21 @@ button:focus {
 /* CONTACT US */
 /*--------------------*/
 
-#mu-contact {
+#contact {
 	background-color: #fff;
 	display: inline;
 	float: left;
 	width: 100%;
 }
 
-.mu-contact-area {
+.contact-area {
 	display: inline;
 	float: left;
 	padding: 100px 0;
 	width: 100%;
 }
 
-.mu-contact-header {
+.contact-header {
 	display: inline;
 	float: left;
 	text-align: center;
@@ -885,7 +885,7 @@ button:focus {
 	padding: 0 120px;
 }
 
-.mu-contact-content{
+.contact-content{
 	display: inline;
 	float: left;
 	margin-top: 50px;
@@ -893,7 +893,7 @@ button:focus {
 	width: 100%;
 }
 
-.mu-contact-right {
+.contact-right {
 	display: inline;
 	float: left;
 	width: 100%;
@@ -901,14 +901,14 @@ button:focus {
 	padding-left: 15px;
 }
 
-.mu-contact-right-single {
+.contact-right-single {
 	display: inline;
 	float: left;
 	margin-bottom: 35px;
 	width: 100%;
 }
 
-.mu-contact-right-single .mu-icon {
+.contact-right-single .mu-icon {
 	background-color: transparent;
 	font-size: 20px;
 	display: block;
@@ -921,18 +921,18 @@ button:focus {
 	margin-right: 15px;
 }
 
-.mu-contact-right-single p{
+.contact-right-single p{
 	margin-bottom: 0;
 }
 
 
-.mu-contact-left {
+.contact-left {
 	display: inline;
 	float: left;
 	width: 100%;
 }
 
-.mu-contact-form .form-group input {
+.contact-form .form-group input {
 	background: transparent;
 	border-radius: 10px;
 	color: #333;
@@ -942,7 +942,7 @@ button:focus {
 	margin-bottom: 24px;
 }
 
-.mu-contact-form .form-group textarea {
+.contact-form .form-group textarea {
 	background: transparent;
 	border: 1px solid #888;
 	border-radius: 10px;
@@ -952,34 +952,34 @@ button:focus {
 	height: 190px;
 }
 
-.mu-contact-form .form-control:focus {
+.contact-form .form-control:focus {
 	background-color: #fff;
     outline: 0;
     box-shadow: none;    
 } 
 
-.mu-contact-form .form-control::-webkit-input-placeholder {
+.contact-form .form-control::-webkit-input-placeholder {
 	color: #888;
 	font-size: 15px;
 }
 
-.mu-contact-form .form-control:-moz-placeholder { /* Firefox 18- */
+.contact-form .form-control:-moz-placeholder { /* Firefox 18- */
 	color: #888;
 	font-size: 15px; 
 }
 
-.mu-contact-form .form-control::-moz-placeholder {  /* Firefox 19+ */
+.contact-form .form-control::-moz-placeholder {  /* Firefox 19+ */
 	color: #888;
 	font-size: 15px;
 }
 
-.mu-contact-form .form-control:-ms-input-placeholder {  
+.contact-form .form-control:-ms-input-placeholder {  
 	color: #888;
 	font-size: 15px;
 }
 
-.mu-contact-form .button-default::after,
-.mu-contact-form .button-default > span {
+.contact-form .button-default::after,
+.contact-form .button-default > span {
 	padding: 12px 40px;  
 }
 
@@ -1104,12 +1104,12 @@ Author URI : http://www.markups.io/
 
 .mu-social-media a:hover,
 .mu-social-media a:focus,
-.mu-contact-right-single .mu-icon {
+.contact-right-single .mu-icon {
 	border: 1px solid #f56720;
 	color: #f56720;
 }
 
-.mu-contact-form .form-control:focus {
+.contact-form .form-control:focus {
 	border: 1px solid #f56720;    
 } 
 
@@ -1174,7 +1174,7 @@ Author URI : http://www.markups.io/
 		right: -25px;
 	}
 
-	.mu-contact-content {
+	.contact-content {
 		padding: 0;
 	}
 
@@ -1208,7 +1208,7 @@ Author URI : http://www.markups.io/
 		padding: 0;
 	}
 
-	.mu-contact-right {
+	.contact-right {
 		margin-top: 50px;
 	}
 
