@@ -25,7 +25,9 @@ app.get('/about', (req, res) => {
   res.render('index', { text: 'This is EJS'})
 })
 
-
+app.get('/verification', (req, res) => {
+  res.render('verification', { text: 'This is EJS'})
+})
 
 //  Listen on port 3000
 app.listen(port, () => console.info(`Listening on port ${port}`))
