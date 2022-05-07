@@ -161,7 +161,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             sformError();
-            ssubmitMSG(false, "Please fill all fields!");
+            ssubmitMSG(false, "Please fill all field..");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -218,7 +218,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             lformError();
-            lsubmitMSG(false, "Please fill all fields!");
+            lsubmitMSG(false, "Please fill all fields...");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -273,7 +273,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             nformError();
-            nsubmitMSG(false, "Please fill all fields!");
+            nsubmitMSG(false, "Please fill all fields.");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -287,7 +287,7 @@
         var terms = $("#nterms").val();
         $.ajax({
             type: "POST",
-            url: "php/newsletterform-process.php",
+            url: "/send-email",
             data: "email=" + email + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
