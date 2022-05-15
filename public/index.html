@@ -591,29 +591,48 @@
                         	<div class="mu-title-area">
 								<h2 class="mu-heading-title">GET IN TOUCH</h2>
 								<span class="mu-title-dot"></span>
-								<p>Our Mobile Application is all about sharing. Share your thoughts. We are here to help you.
-<br>Please drop a note how we can suppot you in using our app.</p>
 							</div>
-                        <!-- Newsletter Form -->
-                        <form id="newsletterForm" data-toggle="validator" data-focus="false" action="/send-email" method="post">
-                            <div class="form-group">                
-                                <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                         <!-- Privacy Form -->
+                         <div class="form-container">
+                          <form id="privacyForm" data-toggle="validator" data-focus="false">
+                            <p>Our Mobile Application is all about sharing. Share your thoughts. We are here to help you.
+                              Please drop a note how we can suppot you in using our app.</p>
+                              <div class="form-group">
+                                  <input type="text" class="form-control-input" id="pname" required>
+                                  <label class="label-control" for="pname">Name</label>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                              <div class="form-group">
+                                  <input type="email" class="form-control-input" id="pemail" required>
+                                  <label class="label-control" for="pemail">Email</label>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                              <div class="form-group">
+                                <input type="text" class="form-control-input" id="psubject" required>
+                                <label class="label-control" for="psubject">Subject</label>
+                                <div class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group">                
-                                <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
-                            </div>              
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
-                            </div>
-                           
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">SUBMIT</button>
-                            </div>
-                            <div class="form-message">
-                                <div id="nmsgSubmit" class="h3 text-center hidden"></div>
-                            </div>
-                        </form>
-                        <!-- end of newsletter form -->
+                              <div class="form-group">
+                                <div class="form-group">
+                                  <textarea class="form-control-input" id="pmessage" name="pmessage" maxlength="500" minlength="50" required></textarea>
+                                  <label class="label-control" for="psubject">Message</label>
+                                  <div class="help-block with-errors"></div>
+                                </div>
+                                
+                              </div>
+                              <div class="form-group checkbox">
+                                  <input type="checkbox" id="pterms" value="Agreed-to-Terms" required>I have read and agree to Tivo's <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                              <div class="form-group">
+                                  <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                              </div>
+                              <div class="form-message">
+                                  <div id="pmsgSubmit" class="h3 text-center hidden"></div>
+                              </div>
+                          </form>
+                      </div> <!-- end of form container -->
+                      <!-- end of privacy form -->
 
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->

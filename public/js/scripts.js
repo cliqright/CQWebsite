@@ -339,13 +339,13 @@
         // initiate variables with form content
 		var name = $("#pname").val();
 		var email = $("#pemail").val();
-        var select = $("#pselect").val();
-        var terms = $("#pterms").val();
-        
+        var message = $("#pmessage").val();
+        var subject = $("#psubject").val();
+        psubmitMSG(false, "Thank you for contacting us!"+ name + email);
         $.ajax({
             type: "POST",
-            url: "php/privacyform-process.php",
-            data: "name=" + name + "&email=" + email + "&select=" + select + "&terms=" + terms, 
+            url: "/sentemail",
+            data: "name=" + name + "&email=" + email + "&message=" + message + "&subject=" + subject, 
             success: function(text) {
                 if (text == "success") {
                     pformSuccess();
