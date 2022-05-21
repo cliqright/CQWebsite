@@ -43,7 +43,7 @@ app.get('/privacy-policy', (req, res) => {
   res.render('privacy-policy', { text: 'This is EJS'})
 })
 
-app.get('/terms-conditionsy', (req, res) => {
+app.get('/terms-conditions', (req, res) => {
   res.render('terms-conditions', { text: 'This is EJS'})
 })
 
