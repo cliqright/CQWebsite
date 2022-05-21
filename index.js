@@ -38,6 +38,15 @@ app.get('/about', (req, res) => {
 app.get('/verification', (req, res) => {
   res.render('verification', { text: 'This is EJS'})
 })
+
+app.get('/privacy-policy', (req, res) => {
+  res.render('privacy-policy', { text: 'This is EJS'})
+})
+
+app.get('/terms-conditionsy', (req, res) => {
+  res.render('terms-conditions', { text: 'This is EJS'})
+})
+
 // POST method route
 app.post('/sentemail', (req, res) => {
   console.log(req.body.name);
