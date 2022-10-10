@@ -1,7 +1,7 @@
 // Imports
 const express = require('express')
 const path = require("path");
-import { env } from 'node:process';
+
 
 
   
@@ -13,7 +13,7 @@ var defaultClient = SibApiV3Sdk.ApiClient.instance;
 // Configure API key authorization: api-key
 var apiKey = defaultClient.authentications["api-key"];
 
-apiKey.apiKey =env.SMTPkey;
+apiKey.apiKey = process.env.SMTPkey;
 console.log(env.SMTPkey);
 console.log(apiKey.apiKey);
 
