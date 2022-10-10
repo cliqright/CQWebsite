@@ -14,7 +14,7 @@ var defaultClient = SibApiV3Sdk.ApiClient.instance;
 var apiKey = defaultClient.authentications["api-key"];
 
 apiKey.apiKey = process.env.SMTPkey;
-console.log(process.env.SMTPkey);
+console.log("API called successfully. Returned data: "+process.env.SMTPkey);
 console.log(apiKey.apiKey);
 
   
