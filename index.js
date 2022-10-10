@@ -1,6 +1,9 @@
 // Imports
 const express = require('express')
 const path = require("path");
+import { env } from 'node:process';
+
+
   
 
 const app = express()
@@ -9,8 +12,10 @@ var SibApiV3Sdk = require("sib-api-v3-sdk");
 var defaultClient = SibApiV3Sdk.ApiClient.instance;
 // Configure API key authorization: api-key
 var apiKey = defaultClient.authentications["api-key"];
-apiKey.apiKey =
-  "xsmtpsib-c85e2e6dd6e6bdbef5b85a396344d0e053302af6627ff3014b800a2e5f349f1f-cZP9XkrFjYsVIQ7T";
+
+apiKey.apiKey =env.SMTPkey;
+console.log(env.SMTPkey);
+console.log(apiKey.apiKey);
 
   
 
